@@ -1,0 +1,344 @@
+{\rtf1\fbidis\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset1 Segoe UI Emoji;}{\f2\fnil\fcharset1 Segoe UI Symbol;}{\f3\fnil Calibri;}{\f4\fnil\fcharset1 Segoe UI Symbol;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22\lang9 <!doctype html>\par
+<html lang="en">\par
+<head>\par
+<meta charset="utf-8" />\par
+<meta name="viewport" content="width=device-width,initial-scale=1" />\par
+<title>Hamad Cheema</title>\par
+\par
+<link href="{{\field{\*\fldinst{HYPERLINK https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Great+Vibes&display=swap }}{\fldrslt{https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Great+Vibes&display=swap\ul0\cf0}}}}\f0\fs22 " rel="stylesheet">\par
+<style>\par
+  :root\{\par
+    --bg:#07101a;\par
+    --muted:#98a0b3;\par
+    --accent:#00d4ff;\par
+    --white:#eaf2ff;\par
+  \}\par
+  *\{box-sizing:border-box\}\par
+  body\{\par
+    margin:0;\par
+    font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, Arial;\par
+    background: linear-gradient(180deg,#04101a 0%, #081426 60%);\par
+    color:var(--white);\par
+    padding:24px;\par
+  \}\par
+  .wrap\{max-width:1100px;margin:0 auto;display:grid;grid-template-columns: 360px 1fr; gap:28px;align-items:start;\}\par
+  @media (max-width:980px)\{ .wrap\{grid-template-columns:1fr; padding-bottom:40px\} \}\par
+\par
+  /* left column */\par
+  .left \{\par
+    background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));\par
+    border:1px solid rgba(255,255,255,0.04);\par
+    border-radius:12px;padding:20px;\par
+  \}\par
+  .avatar\{display:flex;gap:16px;align-items:center;\}\par
+  .avatar img\{\par
+    width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,0.06);\par
+    box-shadow: 0 6px 20px rgba(0,0,0,0.7);\par
+  \}\par
+  .meta h2\{ margin:0 0 6px 0; font-size:20px; font-weight:700;\}\par
+  .meta p.bio\{ margin:0;color:var(--muted); font-size:14px; line-height:1.35;\}\par
+  .action-row\{ display:flex; gap:8px; margin-top:14px;\}\par
+  .btn\{\par
+    background: linear-gradient(90deg, rgba(0,212,255,0.12), rgba(255,214,100,0.06));\par
+    color:var(--white);\par
+    padding:9px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);\par
+    cursor:pointer;font-weight:600;font-size:14px;\par
+  \}\par
+  .btn.secondary\{ background:transparent;border:1px solid rgba(255,255,255,0.06); color:var(--muted); \}\par
+\par
+  .stats\{ display:flex; gap:12px; margin-top:18px; \}\par
+  .stat\{ flex:1; background: rgba(255,255,255,0.02); padding:10px; border-radius:8px; text-align:center; \}\par
+  .stat strong\{ display:block; font-size:18px; \}\par
+  .stat span\{ color:var(--muted); font-size:13px; \}\par
+\par
+  .highlights\{ margin-top:20px; display:flex; gap:12px; overflow:auto; padding-bottom:6px;\}\par
+  .hl\{ min-width:72px; text-align:center;\}\par
+  .hl .circle\{ width:72px;height:72px;border-radius:50%; overflow:hidden; border:2px solid rgba(255,255,255,0.04); display:block; background:#111; \}\par
+  .hl p\{ margin:6px 0 0;font-size:12px;color:var(--muted); \}\par
+\par
+  /* right column */\par
+  .profile-head\{ display:flex; align-items:center; justify-content:space-between; gap:14px; margin-bottom:12px; \}\par
+  .name h1\{ margin:0; font-family:"Great Vibes", cursive; font-size:34px; color:var(--accent); \}\par
+  .name .handle\{ color:var(--muted); font-size:14px; margin-top:-6px;\}\par
+  .desc\{\par
+    background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));\par
+    padding:18px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);\par
+    margin-bottom:18px;color:var(--muted);\par
+  \}\par
+  .tabs\{ display:flex; gap:10px; align-items:center; margin-bottom:18px; \}\par
+  .tab \{ padding:10px 14px; border-radius:8px; color:var(--muted); cursor:pointer; font-weight:600; \}\par
+  .tab.active\{ background: linear-gradient(90deg, rgba(0,212,255,0.06), rgba(255,214,100,0.03)); color:var(--white); box-shadow:0 6px 20px rgba(0,0,0,0.6); \}\par
+\par
+  .grid\{ display:grid; grid-template-columns: repeat(3,1fr); gap:10px; \}\par
+  @media (max-width:980px)\{ .grid\{ grid-template-columns: repeat(2,1fr);\} \}\par
+  @media (max-width:520px)\{ .grid\{ grid-template-columns: repeat(1,1fr);\} \}\par
+\par
+  .post\{ position:relative; overflow:hidden; border-radius:10px; cursor:pointer; background:#000; height:0; padding-bottom:100%;\par
+    transition: transform .35s cubic-bezier(.2,.9,.3,1), box-shadow .3s; border:1px solid rgba(255,255,255,0.03); \}\par
+  .post img\{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; \}\par
+  .post .meta\{ position:absolute; left:8px; bottom:8px; color: #fff; font-weight:700; font-size:12px; padding:6px 8px; border-radius:8px;\par
+    background: linear-gradient(90deg, rgba(0,0,0,0.45), rgba(0,0,0,0.2)); backdrop-filter: blur(4px); display:flex; gap:8px; align-items:center; \}\par
+  .post:hover\{ transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.6); \}\par
+\par
+  /* modal */\par
+  .modal\{ position:fixed; inset:0; display:none; z-index:9999; align-items:center; justify-content:center; background: linear-gradient(0deg, rgba(2,6,23,0.6), rgba(2,6,23,0.85)); \}\par
+  .modal.open\{ display:flex; \}\par
+  .modal-card\{ width:min(920px,95%); background: #07111a; border-radius:12px; padding:20px; display:flex; gap:18px; color:var(--white); \}\par
+  .modal-left\{ flex:1; border-radius:8px; overflow:hidden; background:#000; min-height:420px; display:flex; align-items:center; justify-content:center; \}\par
+  .modal-left img\{ width:100%; height:100%; object-fit:contain; \}\par
+  .modal-right\{ width:360px; max-height:80vh; overflow:auto; \}\par
+  .close-btn\{ position:absolute; right:20px; top:18px; background:transparent;border:1px solid rgba(255,255,255,0.06); padding:8px 10px;border-radius:8px; cursor:pointer; color:var(--muted);\}\par
+\par
+  .small\{ font-size:13px;color:var(--muted) \}\par
+  a.link\{ color:var(--accent); text-decoration:none; font-weight:600 \}\par
+\par
+  /* subtle animations */\par
+  .pulse\{ animation: pulse 2.6s infinite; \}\par
+  @keyframes pulse\{ 0%\{ box-shadow: 0 0 0 0 rgba(0,212,255,0.12); \} 70%\{ box-shadow: 0 0 0 10px rgba(0,212,255,0.00); \} 100%\{ box-shadow: 0 0 0 0 rgba(0,212,255,0.00); \} \}\par
+\par
+  /* Mobile-specific fixes */\par
+  @media (max-width: 600px) \{\par
+    body \{ padding: 12px; \}\par
+    .wrap \{ grid-template-columns: 1fr; gap: 20px; \}\par
+    .avatar \{ flex-direction: column; align-items: center; text-align: center; \}\par
+    .avatar img \{ width: 100px; height: 100px; \}\par
+    .meta h2 \{ font-size: 18px; \}\par
+    .stats \{ justify-content: center; \}\par
+    .highlights \{ justify-content: center; \}\par
+    .profile-head \{ flex-direction: column; align-items: center; text-align: center; gap: 8px; \}\par
+    .tabs \{ flex-wrap: wrap; justify-content: center; \}\par
+    .grid \{ grid-template-columns: repeat(2, 1fr); \}\par
+  \}\par
+  @media (max-width: 400px) \{\par
+    .grid \{ grid-template-columns: 1fr; \}\par
+  \}\par
+</style>\par
+</head>\par
+<body>\par
+\par
+<div class="wrap">\par
+\par
+  <!-- LEFT -->\par
+  <aside class="left" aria-label="profile sidebar">\par
+    <div class="avatar">\par
+      <img id="avatarImg" src="PROFILE_PICTURE_HERE" alt="avatar">\par
+      <div class="meta">\par
+        <h2 id="displayName">Hamad Cheema</h2>\par
+        <div class="small handle" id="handle">@alyhaamad</div>\par
+        <p class="bio" id="bioText">Judge me when you're flawless or at least pretending to be, no cap</p>\par
+        <div class="action-row">\par
+          <button class="btn" id="followBtn">Follow</button>\par
+          <button class="btn secondary" id="dmBtn">Message</button>\par
+        </div>\par
+      </div>\par
+    </div>\par
+    <div class="stats">\par
+      <div class="stat"><strong id="postsCount">3</strong><span>Posts</span></div>\par
+      <div class="stat"><strong id="followersCount">406</strong><span>Followers</span></div>\par
+      <div class="stat"><strong id="followingCount">40</strong><span>Following</span></div>\par
+    </div>\par
+    <div class="highlights" id="highlights">\par
+      <div class="hl"><span class="circle"><img src="HIGHLIGHT_HERE" alt=""></span><p>World</p></div>\par
+      <div class="hl"><span class="circle"><img src="HIGHLIGHT_HERE" alt=""></span><p>Highlights</p></div>\par
+      <div class="hl"><span class="circle"><img src="HIGHLIGHT_HERE" alt=""></span><p>\f1\u10084?\u-497?\f0 </p></div>\par
+    </div>\par
+  </aside>\par
+\par
+  <!-- RIGHT -->\par
+  <main class="right">\par
+    <div class="profile-head">\par
+      <div class="name">\par
+        <div>\par
+          <h1 id="brandName">Hamad Cheema</h1>\par
+          <div class="handle small" id="smallHandle">@alyhaamad</div>\par
+        </div>\par
+      </div>\par
+      <div style="display:flex;gap:12px;align-items:center">\par
+        <button class="btn pulse" id="visitInstagram">Open Instagram</button>\par
+        <a class="link" href="{{\field{\*\fldinst{HYPERLINK https://www.instagram.com/alyhaamad/ }}{\fldrslt{https://www.instagram.com/alyhaamad/\ul0\cf0}}}}\f0\fs22 " target="_blank" rel="noopener noreferrer">Original profile</a>\par
+      </div>\par
+    </div>\par
+    <div class="desc" id="longBio">Judge me when you're flawless or at least pretending to be, no cap</div>\par
+    <div class="tabs" role="tablist">\par
+      <div class="tab active" data-tab="posts">Posts</div>\par
+      <div class="tab" data-tab="igtv">Reels</div>\par
+      <div class="tab" data-tab="tagged">Tagged</div>\par
+    </div>\par
+    <div class="grid" id="postsGrid">\par
+      <div class="post" data-full="POST_HERE" data-caption=""><img src="POST_HERE" alt="post1"><div class="meta">\f1\u10084?\u-497?\f0 </div></div>\par
+      <div class="post" data-full="POST_HERE" data-caption=""><img src="POST_HERE" alt="post2"><div class="meta">\f1\u10084?\u-497?\f0 </div></div>\par
+      <div class="post" data-full="POST_HERE" data-caption=""><img src="POST_HERE" alt="post3"><div class="meta">\f1\u10084?\u-497?\f0 </div></div>\par
+    </div>\par
+  </main>\par
+</div>\par
+\par
+<!-- Modal -->\par
+<div class="modal" id="modal" aria-hidden="true">\par
+  <div class="modal-card">\par
+    <div class="modal-left"><img id="modalImg" src="" alt="post"></div>\par
+    <div class="modal-right">\par
+      <button class="close-btn" id="closeModal">Close \f2\u10005?\f0 </button>\par
+      <div style="padding:4px 0 10px 0; border-bottom:1px solid rgba(255,255,255,0.03); margin-bottom:10px;">\par
+        <strong id="modalAuthor">Hamad Cheema</strong>\par
+        <div class="small" id="modalTime">Posted</div>\par
+      </div>\par
+      <div id="modalCaption" style="white-space:pre-wrap; color:var(--muted);"></div>\par
+      <div style="margin-top:14px;" class="small">\f1\u10084?\u-497?\f3  \f0 <span id="modalLikes">58</span> &nbsp;&nbsp; \f4\u-10179?\u-9044?\f3  \f0 <span id="modalComments">9</span></div>\par
+      <div style="height:20px"></div>\par
+      <div class="small">Open original on Instagram: <a class="link" id="modalLink" href="{{\field{\*\fldinst{HYPERLINK https://www.instagram.com/alyhaamad/ }}{\fldrslt{https://www.instagram.com/alyhaamad/\ul0\cf0}}}}\f0\fs22 " target="_blank" rel="noopener">View</a></div>\par
+    </div>\par
+  </div>\par
+</div>\par
+<audio id="bgMusic" autoplay loop>\par
+  <source src="data:audio/mpeg;base64,AUDIO_HERE" type="audio/mpeg">\par
+</audio>\par
+\par
+<!-- Desktop YouTube video -->\par
+<div class="desktop-video">\par
+  <iframe id="ytPlayer" \par
+    src="https://www.youtube.com/embed/PIkrizTxiH4?enablejsapi=1&mute=0" \par
+    title="YouTube video player" \par
+    frameborder="0" \par
+    allow="autoplay; encrypted-media" \par
+    allowfullscreen>\par
+  </iframe>\par
+</div>\par
+\par
+<!-- Control Button -->\par
+<button id="toggleMedia" class="media-btn">\f2\u9654? Play Video</button>\par
+\par
+<style>\par
+  @media (max-width: 980px) \{\par
+    .desktop-video \{ display: none; \}\par
+    .media-btn \{ display: none; \}\par
+  \}\par
+  @media (min-width: 981px) \{\par
+    .desktop-video \{\par
+      position: fixed;\par
+      bottom: 0;\par
+      left: 0;\par
+      width: 100%;\par
+      background: black;\par
+      z-index: 9999;\par
+    \}\par
+    .desktop-video iframe \{\par
+      width: 100%;\par
+      height: 250px;\par
+    \}\par
+    .media-btn \{\par
+      position: fixed;\par
+      bottom: 260px; /* just above video */\par
+      right: 20px;\par
+      padding: 10px 14px;\par
+      background: #00d4ff;\par
+      color: black;\par
+      font-weight: bold;\par
+      border: none;\par
+      border-radius: 8px;\par
+      cursor: pointer;\par
+      z-index: 10000;\par
+    \}\par
+  \}\par
+</style>\par
+<script>\par
+let ytPlayer;\par
+\par
+// YouTube API ready callback\par
+function onYouTubeIframeAPIReady() \{\par
+  ytPlayer = new YT.Player('ytPlayer', \{\par
+    events: \{\par
+      'onStateChange': onPlayerStateChange\par
+    \}\par
+  \});\par
+\}\par
+\par
+// When YouTube video plays, pause background music\par
+function onPlayerStateChange(event) \{\par
+  const bgMusic = document.getElementById('bgMusic');\par
+  if (event.data === YT.PlayerState.PLAYING) \{\par
+    bgMusic.pause();\par
+  \}\par
+\}\par
+\par
+document.addEventListener('click', function(e) \{\par
+  // Open Instagram post modal\par
+  const p = e.target.closest('.post');\par
+  if (p) \{\par
+    const full = p.dataset.full || p.querySelector('img').src;\par
+    const caption = p.dataset.caption || '';\par
+    document.getElementById('modalImg').src = full;\par
+    document.getElementById('modalCaption').textContent = caption;\par
+    document.getElementById('modal').classList.add('open');\par
+    document.getElementById('modal').setAttribute('aria-hidden', 'false');\par
+  \}\par
+\par
+  // Close modal\par
+  if (e.target.id === 'closeModal' || e.target.classList.contains('modal')) \{\par
+    document.getElementById('modal').classList.remove('open');\par
+    document.getElementById('modal').setAttribute('aria-hidden', 'true');\par
+  \}\par
+\});\par
+\par
+document.getElementById('followBtn').addEventListener('click', function() \{\par
+  const btn = this;\par
+  btn.classList.toggle('following');\par
+  btn.textContent = btn.classList.contains('following') ? 'Following' : 'Follow';\par
+\});\par
+\par
+document.getElementById('visitInstagram').addEventListener('click', function() \{\par
+  window.open('https://www.instagram.com/alyhaamad/', '_blank', 'noopener');\par
+\});\par
+\par
+document.getElementById('dmBtn').addEventListener('click', function() \{\par
+  window.open('https://www.instagram.com/direct/t/121555572567101/', '_blank', 'noopener');\par
+\});\par
+\par
+// Background music autoplay with enable button if blocked\par
+(async () => \{\par
+  const a = document.getElementById('bgMusic');\par
+  try \{\par
+    await a.play();\par
+  \} catch (e) \{\par
+    const btn = document.createElement('button');\par
+    btn.textContent = '\u9654? Enable sound';\par
+    Object.assign(btn.style, \{\par
+      position: 'fixed', bottom: '16px', right: '16px',\par
+      padding: '10px 14px', borderRadius: '10px', border: 'none',\par
+      cursor: 'pointer', zIndex: 99999\par
+    \});\par
+    btn.onclick = async () => \{\par
+      try \{\par
+        await a.play();\par
+        btn.remove();\par
+      \} catch \{\}\par
+    \};\par
+    document.body.appendChild(btn);\par
+  \}\par
+\})();\par
+\par
+// Toggle media button: YouTube vs music\par
+document.getElementById('toggleMedia').addEventListener('click', function() \{\par
+  const bgMusic = document.getElementById('bgMusic');\par
+\par
+  if (ytPlayer && ytPlayer.getPlayerState() !== YT.PlayerState.PLAYING) \{\par
+    bgMusic.pause();\par
+    ytPlayer.playVideo();\par
+    this.textContent = '\u9208? Pause Video';\par
+  \} else \{\par
+    if (ytPlayer) ytPlayer.pauseVideo();\par
+    this.textContent = '\u9654? Play Video';\par
+  \}\par
+\});\par
+\par
+// Load YouTube API\par
+let tag = document.createElement('script');\par
+tag.src = "{{\field{\*\fldinst{HYPERLINK https://www.youtube.com/iframe_api }}{\fldrslt{https://www.youtube.com/iframe_api\ul0\cf0}}}}\f2\fs22 ";\par
+document.body.appendChild(tag);\par
+</script>\f0\par
+</body>\par
+</html>\par
+}
+ 
